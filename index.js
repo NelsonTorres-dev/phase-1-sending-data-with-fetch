@@ -70,13 +70,19 @@ const submitData = (name, email) => {
 
     .catch((error)=>{
       let h4 = document.createElement('h4');
-      h4.innerHTML = error.message;
+      h4.textContent = error.message;
       document.body.appendChild(h4);
       console.log(error.message)
     })
    
  }
 submitData()
+
+
+
+
+
+
 
 
 
